@@ -2,18 +2,23 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data ={
-    'Product':['Keyboard','Mouse','Laptop'],
-    'Sales':[110,104,89]
+
+data={
+    'Product':['Keyboard','Mouse','Laptop','Headphone','Phone'],
+    'Sales':[123,145,80,201,143]
 }
-df = pd.DataFrame(data)
+
+df=pd.DataFrame(data)
+
 
 plt.figure(figsize=(10,6))
 
-sns.barplot(x='Product', y='Sales', data=df,palette='viridis')
+sns.barplot(x='Product',y='Sales',data=df,palette='viridis')
 
-plt.title('Product Sales')
+plt.title('Sales by Product')
 plt.xlabel('Product')
-plt.ylabel('Sales AZN')
+plt.ylabel('Sales')
+
 
 plt.show()
+
