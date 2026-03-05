@@ -11,7 +11,7 @@ data={
 df=pd.DataFrame(data)
 
 
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(10,8))
 
 sns.barplot(x='Product',y='Sales',data=df,palette='viridis')
 
